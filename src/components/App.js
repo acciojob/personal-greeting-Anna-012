@@ -19,11 +19,7 @@ const App = () => {
         value={name}
         onChange={handleInputChange}
       />
-      {/* Always render a message to avoid empty states */}
-      <h2>
-        {name.trim() ? `Hello name!` : "Please enter your name."}
-  
-      </h2>
+      {name.trim() && <h2>Hello {name.trim()}!</h2>}
     </div>
   );
 };
