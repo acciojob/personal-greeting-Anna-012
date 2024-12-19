@@ -1,6 +1,5 @@
-
-import React from "react";
-import './../styles/App.css';
+import React, { useState } from "react";
+import "./../styles/App.css";
 
 const App = () => {
   const [name, setName] = useState("");
@@ -13,7 +12,9 @@ const App = () => {
     <div>
       {/* Do not remove the main div */}
       <h1>Personalized Greeting App</h1>
+      <label htmlFor="nameInput">Enter your name: </label>
       <input
+        id="nameInput"
         type="text"
         placeholder="Enter your name"
         value={name}
@@ -24,4 +25,4 @@ const App = () => {
   );
 };
 
-export default App
+export default App;
