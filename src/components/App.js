@@ -11,7 +11,6 @@ const App = () => {
   return (
     <div>
       {/* Do not remove the main div */}
-      <h1>Personalized Greeting App</h1>
       <label htmlFor="nameInput">Enter your name: </label>
       <input
         id="nameInput"
@@ -20,7 +19,10 @@ const App = () => {
         value={name}
         onChange={handleInputChange}
       />
-      {name.trim() && <h2>Hello, {name.trim()}!</h2>}
+      {/* Always render a message to avoid empty states */}
+      <h2>
+        {name.trim() ? `Hello, ${name.trim()}!` : "Please enter your name."}
+      </h2>
     </div>
   );
 };
