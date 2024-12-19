@@ -20,7 +20,7 @@ const App = () => {
         value={name}
         onChange={handleInputChange}
       />
-      {name && <h2>Hello, {name}!</h2>}
+      {name.trim() && <h2>Hello, {name.trim()}!</h2>}
     </div>
   );
 };
