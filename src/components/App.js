@@ -21,7 +21,8 @@ const App = () => {
       />
       {/* Always render a message to avoid empty states */}
       <h2>
-        {name.trim() ? `Hello, ${name.trim()}!` : "Please enter your name."}
+        {name.trim() ? `Hello n!` : "Please enter your name."}
+  
       </h2>
     </div>
   );
